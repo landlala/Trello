@@ -40,6 +40,7 @@ const Area = styled.div<IAreaProps>`
     ? "#b2bec3"
     : "transparent"};
   transition: background-color 0.3s ease-in-out;
+  padding: 20px;
   flex-grow: 1;  
 `;
 
