@@ -8,22 +8,30 @@ import DraggableCard from "./DraggableCard";
 const Wrapper = styled.div`
   background-color: ${props => props.theme.boardColor};
   padding-top: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   min-height: 300px;
   display: flex;
   flex-direction: column;
+  border: 2px solid white;
 `;
 
-const Title = styled.h1`
+const Title = styled.div`
+  @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+  font-family: 'Sigmar', cursive;
+  color: black;
   text-align: center;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 10px;
 `;
-
+ 
 const Form = styled.form`
+  height: 30px;
   input {
     width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
   }
 `;
 
@@ -35,12 +43,12 @@ interface IAreaProps {
 const Area = styled.div<IAreaProps>`
   background-color: ${props => 
     props.isDraggingOver 
-    ? "#dfe6e9" 
-    : props.isDraggingFromThis
     ? "#b2bec3"
+    : props.isDraggingFromThis
+    ? "#dfe6e9"
     : "transparent"};
   transition: background-color 0.3s ease-in-out;
-  padding: 20px;
+  padding: 10px;
   flex-grow: 1;  
 `;
 

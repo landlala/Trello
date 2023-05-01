@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 const Boards = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15px;
   width: 100%;
 `;
 
