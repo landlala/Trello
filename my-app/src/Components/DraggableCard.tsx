@@ -14,7 +14,7 @@ const Text = styled.div`
   @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
   font-family: 'Sigmar', cursive;
   font-size: 15px;
-  font-weight: 60;
+  font-weight: 50;
 `;
 
 interface ICardProps {
